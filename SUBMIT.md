@@ -69,7 +69,7 @@ Live sandbox credentials by default for hosted demo, voice input (`webkitSpeechR
 ## Links (fill at submit)
 - **GitHub:** https://github.com/barood-labs/quotepal
 - **Demo video (local):** `/workspace/bounty/drafts/quotepal/demo/quotepal_demo.mp4` (15.7s, also in repo `demo/quotepal_demo.mp4`)
-- **Demo video (YouTube):** _not uploaded yet — Satr Tools Studio still needs phone verification for custom thumbnails; upload Public/Unlisted without custom thumb when Studio is ready, then paste URL here_
+- **Demo video (YouTube):** https://www.youtube.com/watch?v=ZDzVV8z55-o (Unlisted on Satr Tools; also https://youtube.com/shorts/ZDzVV8z55-o)
 - **Try it:** `npm start` → http://localhost:8790 (mock PayPal)
 - **License:** MIT (visible in repo About)
 
@@ -86,7 +86,7 @@ Live sandbox credentials by default for hosted demo, voice input (`webkitSpeechR
 - [ ] Wasl Devpost entry untouched
 - [ ] New Devpost software project created
 - [ ] Public repo URL + MIT in About
-- [ ] YouTube video &lt; 3 min, public or unlisted
+- [x] YouTube video &lt; 3 min, public or unlisted
 - [ ] Built-with list includes PayPal + AI
 - [ ] Screenshots optional
 - [ ] Submit before Nov 12, 2026 12:00pm PST (prefer Nov 10)
