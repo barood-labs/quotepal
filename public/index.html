@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuotePal — talk the job, get paid</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo">QP</span>
+      <div>
+        <strong>QuotePal</strong>
+        <div class="tag">Talk the job, get paid.</div>
+      </div>
+    </div>
+    <div class="pills">
+      <span id="modePill" class="pill">…</span>
+      <span id="aiPill" class="pill muted">AI</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <h1>Dictate the job. Send the invoice.</h1>
+      <p>For solo plumbers, cleaners, and handymen. AI turns a messy note into an itemized quote from your price book, then creates a PayPal invoice and polite reminders when payment is late.</p>
+    </section>
+
+    <section class="card">
+      <h2>1. Job notes</h2>
+      <textarea id="jobText" rows="5" placeholder="e.g. Just left Maria Lopez at 412 Oak — maria@example.com — swapped 2 faucets, snaked the kitchen drain, about 1.5 hrs labor. Call her if parts delay."></textarea>
+      <div class="row">
+        <button id="btnSample" class="ghost" type="button">Load sample</button>
+        <button id="btnParse" class="primary" type="button">Generate quote</button>
+      </div>
+      <p id="parseHint" class="hint"></p>
+    </section>
+
+    <section class="card" id="quoteCard" hidden>
+      <h2>2. Quote <span id="quoteMeta" class="meta"></span></h2>
+      <div id="reviewBanner" class="banner warn" hidden>
+        <strong>Needs review</strong>
+        <span id="reviewBannerText">Some lines or customer fields look weak — check before invoicing.</span>
+      </div>
+      <div class="grid2">
+        <label>Customer <input id="custName" autocomplete="name" /></label>
+        <label>Email <input id="custEmail" type="email" autocomplete="email" /></label>
+        <label>Phone <input id="custPhone" autocomplete="tel" /></label>
+        <label>Currency <input id="currency" value="USD" /></label>
+      </div>
+      <label class="block">Job site / address <input id="custAddress" placeholder="Optional — street, city" autocomplete="street-address" /></label>
+      <table id="itemsTable">
+        <thead><tr><th></th><th>Item</th><th>Qty</th><th>Price</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <div class="row">
+        <button id="btnAddItem" class="ghost" type="button">+ Line</button>
+        <div class="total">Total: <strong id="totalAmt">$0.00</strong></div>
+      </div>
+      <label class="block">Note <textarea id="note" rows="2"></textarea></label>
+      <div class="row">
+        <button id="btnSave" class="ghost" type="button">Save edits</button>
+        <button id="btnInvoice" class="primary" type="button">Create &amp; send PayPal invoice</button>
+      </div>
+      <p id="invoiceHint" class="hint"></p>
+    </section>
+
+    <section class="card" id="invoiceCard" hidden>
+      <h2>3. Invoice</h2>
+      <dl class="kv" id="invoiceKv"></dl>
+      <div class="row">
+        <a id="payLink" class="primary linkbtn" href="#" target="_blank" rel="noopener">Open pay link</a>
+      </div>
+      <div class="remind-box">
+        <div class="row tone-row">
+          <label class="inline">Tone
+            <select id="remindTone">
+              <option value="friendly">Friendly</option>
+              <option value="firm">Firm</option>
+              <option value="final">Final</option>
+            </select>
+          </label>
+          <button id="btnRemind" class="ghost" type="button">Draft &amp; send reminder</button>
+        </div>
+        <div id="subjectPick" class="subject-pick" hidden>
+          <span class="meta">Subject A/B — pick one</span>
+          <div id="subjectVariants" class="chip-row"></div>
+        </div>
+        <pre id="remindPreview" class="preview" hidden></pre>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Price book</h2>
+      <ul id="priceList" class="prices"></ul>
+    </section>
+
+    <section class="card muted-card">
+      <h2>Not Wasl</h2>
+      <p>Wasl is a separate PayPal AI Hackathon entry: bilingual creator escrow with video verification. QuotePal is for trades quotes, PayPal Invoicing v2, and late-payment reminders. Two unique products.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>QuotePal · MIT · barood-labs</span>
+    <span id="footerMode"></span>
+  </footer>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

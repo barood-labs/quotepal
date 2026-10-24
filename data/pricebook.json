@@ -1,0 +1,19 @@
+{
+  "business_name": "Salt Lake Handyman Co.",
+  "currency": "USD",
+  "default_trip_fee": 40,
+  "items": [
+    { "sku": "trip", "name": "Trip / service call", "unit_price": 40, "unit": "each", "aliases": ["trip", "service call", "call out", "visit"] },
+    { "sku": "faucet", "name": "Faucet install", "unit_price": 85, "unit": "each", "aliases": ["faucet", "tap", "faucet install", "faucet replacement"] },
+    { "sku": "toilet", "name": "Toilet install", "unit_price": 160, "unit": "each", "aliases": ["toilet", "commode", "toilet install"] },
+    { "sku": "disposal", "name": "Garbage disposal install", "unit_price": 145, "unit": "each", "aliases": ["disposal", "garbage disposal", "disposall"] },
+    { "sku": "drain", "name": "Drain unclog", "unit_price": 95, "unit": "each", "aliases": ["clog", "unclog", "drain", "snake"] },
+    { "sku": "outlet", "name": "Outlet / switch replace", "unit_price": 55, "unit": "each", "aliases": ["outlet", "switch", "receptacle"] },
+    { "sku": "ceiling_fan", "name": "Ceiling fan install", "unit_price": 175, "unit": "each", "aliases": ["ceiling fan", "fan install"] },
+    { "sku": "drywall_patch", "name": "Drywall patch (small)", "unit_price": 90, "unit": "each", "aliases": ["drywall", "patch", "hole in wall"] },
+    { "sku": "paint_hr", "name": "Interior paint", "unit_price": 65, "unit": "hour", "aliases": ["paint", "painting", "touch up"] },
+    { "sku": "labor_hr", "name": "General labor", "unit_price": 70, "unit": "hour", "aliases": ["labor", "hour", "hourly", "handyman"] },
+    { "sku": "clean_std", "name": "Standard clean (2br)", "unit_price": 120, "unit": "each", "aliases": ["clean", "cleaning", "house clean", "standard clean"] },
+    { "sku": "clean_deep", "name": "Deep clean (2br)", "unit_price": 220, "unit": "each", "aliases": ["deep clean", "move out clean"] }
+  ]
+}

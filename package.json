@@ -1,0 +1,19 @@
+{
+  "name": "quotepal",
+  "version": "0.1.0",
+  "description": "QuotePal — talk the job, get paid. AI quotes + PayPal invoices for solo tradespeople.",
+  "type": "module",
+  "license": "MIT",
+  "main": "server/index.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}
