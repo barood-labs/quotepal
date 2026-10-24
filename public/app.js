@@ -120,14 +120,17 @@ function gatherQuoteFields() {
 }
 
 function quotePatchBody() {
+  const items = currentQuote.items || [];
+  const stillWeak = items.some(it => it.needs_review) || !(currentQuote.customer_email || '').trim();
   return {
     customer_name: currentQuote.customer_name,
     customer_email: currentQuote.customer_email,
     customer_phone: currentQuote.customer_phone,
     customer_address: currentQuote.customer_address,
     currency: currentQuote.currency,
-    items: currentQuote.items,
+    items,
     note: currentQuote.note,
+    needs_review: stillWeak,
   };
 }
 

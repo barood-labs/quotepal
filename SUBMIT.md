@@ -68,7 +68,8 @@ Live sandbox credentials by default for hosted demo, voice input (`webkitSpeechR
 
 ## Links (fill at submit)
 - **GitHub:** https://github.com/barood-labs/quotepal
-- **Demo video (YouTube):** _paste URL after upload_
+- **Demo video (local):** `/workspace/bounty/drafts/quotepal/demo/quotepal_demo.mp4` (15.7s, also in repo `demo/quotepal_demo.mp4`)
+- **Demo video (YouTube):** _not uploaded yet — Satr Tools Studio still needs phone verification for custom thumbnails; upload Public/Unlisted without custom thumb when Studio is ready, then paste URL here_
 - **Try it:** `npm start` → http://localhost:8790 (mock PayPal)
 - **License:** MIT (visible in repo About)
 
